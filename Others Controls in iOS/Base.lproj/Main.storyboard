@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Others_Controls_in_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" maximumValue="100" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="LM6-iP-CXB">
+                                <connections>
+                                    <action selector="actionStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="z4k-S1-8eu"/>
+                                </connections>
+                            </stepper>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSz-tF-P6V">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Othres Controls in iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7I-2I-5tz">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3827061108" green="0.84248840940000003" blue="0.95492632769999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="0i8-vn-oSh"/>
+                                    <constraint firstItem="g7I-2I-5tz" firstAttribute="centerX" secondItem="bSz-tF-P6V" secondAttribute="centerX" id="IfN-ee-bB2"/>
+                                    <constraint firstItem="g7I-2I-5tz" firstAttribute="centerY" secondItem="bSz-tF-P6V" secondAttribute="centerY" id="woy-ZB-cwV"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmC-8n-Ij7">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="crn-DB-vOs">
+                                <frame key="frameInset" minX="36" minY="142" width="223" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.66299954189999999" green="0.84637681490000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-HX-uj8">
+                                <frame key="frameInset" minX="294" minY="127" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Iniciar"/>
+                                <connections>
+                                    <action selector="btnActionInciar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ak-tc-Zns"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="74Z-9C-KFT">
+                                <frame key="frameInset" minX="37" minY="153" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uI-pF-AiX">
+                                <frame key="frameInset" minX="37" minY="442" width="306" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywk-m0-MZd">
+                                <frame key="frameInset" minY="471" height="112"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="504882301.35781503">
+                                    <!--2016-12-31 13:05:01 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="CambiarFecha:" destination="BYZ-38-t0r" eventType="valueChanged" id="xRV-jb-COC"/>
+                                </connections>
+                            </datePicker>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf6-tW-1Zo">
+                                <frame key="frameInset" minX="19" minY="181" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1W7-Jz-tld">
+                                <frame key="frameInset" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="aceptar" id="YhY-Pj-zCD"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="7vB-eb-oh1"/>
+                                    <barButtonItem title="cancelar" id="Mfl-ir-VPb"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="brm-ug-aPz"/>
+                                    <barButtonItem title="regresar" id="wft-Za-Gix">
+                                        <connections>
+                                            <action selector="actionRegresar:" destination="BYZ-38-t0r" id="PXU-7m-aME"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jMg-cn-azY">
+                                <frame key="frameInset" minY="328" height="98"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gvK-Jw-DJa"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="b1G-PC-5gy"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bSz-tF-P6V" secondAttribute="trailing" id="HZd-7p-694"/>
+                            <constraint firstItem="LM6-iP-CXB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Qaa-jU-S5x"/>
+                            <constraint firstItem="PmC-8n-Ij7" firstAttribute="leading" secondItem="LM6-iP-CXB" secondAttribute="trailing" constant="29" id="RQp-Jo-OoI"/>
+                            <constraint firstItem="LM6-iP-CXB" firstAttribute="centerY" secondItem="PmC-8n-Ij7" secondAttribute="centerY" id="aQy-w7-uKg"/>
+                            <constraint firstItem="bSz-tF-P6V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bq3-3d-q51"/>
+                            <constraint firstItem="bSz-tF-P6V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gVS-3o-QMM"/>
+                            <constraint firstItem="LM6-iP-CXB" firstAttribute="top" secondItem="bSz-tF-P6V" secondAttribute="bottom" constant="35" id="hbJ-ow-ZEf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actCargando" destination="74Z-9C-KFT" id="Zyf-kZ-ijW"/>
+                        <outlet property="brProgresView" destination="crn-DB-vOs" id="egA-87-2JH"/>
+                        <outlet property="btnIniciar" destination="YjN-HX-uj8" id="wAE-sc-KjY"/>
+                        <outlet property="dpkFecha" destination="Ywk-m0-MZd" id="Aln-9S-5v7"/>
+                        <outlet property="lblfecha" destination="9uI-pF-AiX" id="kIX-z1-h3p"/>
+                        <outlet property="lbltexto" destination="PmC-8n-Ij7" id="vfn-91-uwS"/>
+                        <outlet property="pvlistas" destination="jMg-cn-azY" id="Yvp-oL-IOn"/>
+                        <outlet property="scrContenedor" destination="bf6-tW-1Zo" id="mQQ-Qo-U6s"/>
+                        <outlet property="spUno" destination="LM6-iP-CXB" id="wrt-MN-Dlk"/>
+                        <outlet property="vwContenido" destination="GLL-dJ-tdN" id="Gum-mA-ZG4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="GLL-dJ-tdN">
+                    <rect key="frame" x="0.0" y="0.0" width="343" height="286"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="inicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwV-v1-eIq">
+                            <frame key="frameInset" minX="8" minY="8" width="40" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Final" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpP-Em-DKr">
+                            <frame key="frameInset" minX="8" minY="257" width="36" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.66299954189999999" green="0.84637681490000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="335.19999999999999" y="-20.239880059970016"/>
+        </scene>
+    </scenes>
+</document>
