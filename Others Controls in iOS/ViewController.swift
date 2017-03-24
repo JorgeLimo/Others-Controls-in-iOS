@@ -105,13 +105,50 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     
     @IBAction func btnActionInciar(_ sender: UIButton) {
         
-        for i in 0...1000{
-            //si la tarea es mucho, se debe hacer en segundo
-            //plano
-            brProgresView.progress = (Float(i)/1000.0)
+        let hilo = DispatchQueue(label: "pe.ourlimm.Others-Controls-in-iOS")
+       
+        /**
+         
+         al cargar dos procesos asincronos se tratan de ejecutar al mismo tiempo
+         
+        let hilo2 = DispatchQueue(label: "pe.ourlimm.Others-Controls-in-iOSPesada")
+        
+        hilo.async {
+            for i in 0...100{
+                print("A \(i)")
+            }
         }
         
+        hilo2.async {
+            for i in 0...100{
+                print("b \(i)")
+            }
+         
+        }
+         
+         
+         este metodo trabja sincrona y espera qe termine la tarea para segui trabajando
+         en el app 
+         
+         hilo.sync {
+         for i in 0...100{
+         print("b \(i)")
+         }
+         
+         }
+         **/
         
+
+        hilo.async {
+            for i in 0...100000{
+                //si la tarea es mucho, se debe hacer en segundo
+                //plano
+                print(i)
+                let progreso = (Float(i)/100000.0)
+                self.brProgresView.progress = progreso
+            }
+        }
+    
     }
     
 
